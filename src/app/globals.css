@@ -1,2 +1,23 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: 'MyFont';
+    src: url('/fonts/myfont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  @keyframes glowPulse {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(200, 150, 255, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 45px rgba(200, 150, 255, 0.9);
+    }
+  }
+  
+  
+  
+  
+  
