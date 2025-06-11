@@ -1,4 +1,4 @@
-import StartPage from '@/component/StartPage'; // 根據你的實際檔案路徑
+import StartPage from '@/component/page/StartPage'; // 根據你的實際檔案路徑
 
 export default function Home() {
   return <StartPage />;
