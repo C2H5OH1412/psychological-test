@@ -1,10 +1,12 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function MobileFrame({ children }) {
   return (
     <div
-      className="w-[33%] min-w-[380px] max-w-[420px] h-[78%] bg-white 
-      rounded-2xl flex justify-center items-center relative overflow-hidden"
+      className="w-[418px] h-[725px] bg-white 
+      rounded-[30px] shadow-lg relative overflow-hidden"
     >
       {/* 背景影片層 */}
       <video
@@ -18,7 +20,16 @@ export default function MobileFrame({ children }) {
         Your browser does not support the video tag.
       </video>
 
-      {/* 子內容層（在影片之上） */}
+      {/* 裝飾圖片層（影片之上、內容之下） */}
+      <Image
+        src="/0.start/bg.png"
+        alt="decoration"
+        width={9999}
+        height={1000}
+        className="absolute bottom-0 right-0 z-5 pointer-events-none"
+      />
+
+      {/* 子內容層（最上面） */}
       <div className="relative z-10 w-full h-full flex justify-center items-center">
         {children}
       </div>

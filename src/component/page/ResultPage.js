@@ -76,23 +76,23 @@ export default function ResultPage() {
   return (
     <MobileFrame className="relative w-screen h-screen overflow-hidden flex flex-col">
       
-      {/* 滾動內容區 */}
       <div
-        className="flex-1 overflow-y-auto bg-cover bg-center px-4 pt-6 pb-[120px] flex flex-col items-center"
+        className="w-full h-full bg-no-repeat bg-top bg-[length:100%_auto] pb-[120px] flex flex-col items-center justify-start"
         style={{ backgroundImage: `url(${bgImageUrl})` }}
       >
         <Image
-          src={getResultImage()}
-          alt="result"
-          width={800}
-          height={1200}
-          className="w-full h-auto object-contain"
-          priority
-        />
+  src={getResultImage()}
+  alt="result"
+  width={390}
+  height={9999}
+  className="w-full h-auto object-top"
+  priority
+/>
+
       </div>
 
-      {/* 固定按鈕區 */}
-      <div className="absolute bottom-4 left-0 right-0 flex gap-3 px-6 z-20">
+      {/* 按鈕區 */}
+      <div className="absolute bottom-14 left-0 right-0 flex gap-3 px-6 z-20">
         <button
           onClick={playAgain}
           style={{

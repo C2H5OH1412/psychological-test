@@ -47,8 +47,8 @@ export default function Croissant() {
         { psyState.state == 2 && <DisplayResultPage nextStep={nextStep}/>}
         { psyState.state == 3 && <ResultPage/>}
         
-        {/* <div onClick={prevStep}>上一步</div>
-        <div onClick={nextStep}>下一步</div> */}
+        <div onClick={prevStep}>上一步</div>
+        <div onClick={nextStep}>下一步</div>
       </div>
     </>
   );
